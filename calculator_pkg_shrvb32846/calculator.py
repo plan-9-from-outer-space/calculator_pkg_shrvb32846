@@ -1,4 +1,7 @@
 class Calculator:
+    def __init__(self):
+        print("Calculator initialized")
+
     def add(self, num1: float, num2: float) -> float:
         return num1 + num2
 
