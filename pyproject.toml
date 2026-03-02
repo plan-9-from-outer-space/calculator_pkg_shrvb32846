@@ -13,7 +13,9 @@ dependencies = [
     "mypy",
     "pre-commit",
     "pytest",
+    "ruff",
     "twine",
+    "ty",
 ]
 
 [project.scripts]
