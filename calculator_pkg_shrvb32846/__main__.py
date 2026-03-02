@@ -1,6 +1,6 @@
 from .calculator import Calculator
 
-def main():
+def main() -> None:
     print(Calculator().add(2, 3))
 
 if __name__ == "__main__":

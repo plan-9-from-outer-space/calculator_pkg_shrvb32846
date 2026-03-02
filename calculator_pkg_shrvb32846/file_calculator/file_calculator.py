@@ -18,21 +18,20 @@ class FileCalculator (Calculator):
         self,
         # "nums.cvs" will not work at runtime, so we need to use the 
         #   Path class to construct the relative path to the file.
-        # path: Path = Path(__file__).parent / "nums.csv",
-        path = Path(__file__).parent / "nums.csv",
+        path: Path = Path(__file__).parent / "nums.csv",
         # expected_lines: int = 3,
     ) -> None:
-        self.path = path
+        self.path: Path = path
         # self.expected_lines: int = expected_lines # 3
 
     def add_file (self) -> float | None:
-        total = None # : float = 0
+        total: float | None = None
         with open(self.path) as f:
             for line in f:
                 if total is None:
-                    total = line
+                    total = float(line)
                 else:
-                    total += line
+                    total += float(line)
         return total
 
     # def add_file(self) -> float | None:
