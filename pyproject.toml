@@ -13,3 +13,6 @@ dependencies = [
     "pre-commit",
     "twine",
 ]
+
+[project.scripts]
+calculator_pkg_shrvb32846 = "calculator_pkg_shrvb32846.__main__:main"

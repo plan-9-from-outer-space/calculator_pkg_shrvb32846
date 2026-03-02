@@ -28,9 +28,9 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "build", specifier = ">=1.4.0" },
+    { name = "build" },
     { name = "pre-commit" },
-    { name = "twine", specifier = ">=6.2.0" },
+    { name = "twine" },
 ]
 
 [[package]]
