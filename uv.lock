@@ -27,7 +27,7 @@ wheels = [
 
 [[package]]
 name = "calculator-pkg-shrvb32846"
-version = "0.3.0"
+version = "0.3.1"
 source = { editable = "." }
 dependencies = [
     { name = "setuptools" },

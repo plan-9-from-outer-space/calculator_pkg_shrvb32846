@@ -1,7 +1,9 @@
 include README.md
 include LICENSE.txt
+include tox.ini
 global-include **.typed
 global-include **.pyi
-include tox.ini
+global-include nums.csv
 
 exclude scripts/**
+exclude uv.lock

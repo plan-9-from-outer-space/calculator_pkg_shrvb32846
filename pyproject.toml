@@ -67,7 +67,7 @@ calculator_pkg_shrvb32846 = ["py.typed"]
 # https://stackoverflow.com/a/76214408/8903959
 [tool.setuptools.packages.find]
 where = ["."]
-exclude = ["scripts", "scripts.*"]
+exclude = ["scripts", "scripts.*", "uv.lock"]
 
 [tool.pytest.ini_options]
 addopts = "-rxXs -v"  # Shows reasons for skipping, xfailing, etc
