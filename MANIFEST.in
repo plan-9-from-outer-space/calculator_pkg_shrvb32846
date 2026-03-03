@@ -6,4 +6,3 @@ global-include **.pyi
 global-include nums.csv
 
 exclude scripts/**
-exclude uv.lock
