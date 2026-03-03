@@ -1,7 +1,9 @@
 from .calculator import Calculator
 
+
 def main() -> None:
-    print(Calculator().add(2, 3))
+    print(Calculator().add(2, 3))  # noqa: T201
+
 
 if __name__ == "__main__":
     main()

@@ -54,7 +54,7 @@ requires-dist = [
     { name = "pre-commit", marker = "extra == 'test'", specifier = "==4.5.1" },
     { name = "pytest", marker = "extra == 'test'", specifier = "==9.0.2" },
     { name = "ruff", marker = "extra == 'test'", specifier = "==0.15.4" },
-    { name = "setuptools", specifier = ">=82.0.0" },
+    { name = "setuptools", specifier = ">=80.0.0" },
     { name = "tox", marker = "extra == 'test'", specifier = ">=4.47.1" },
     { name = "tqdm", specifier = "~=4.0" },
     { name = "twine", marker = "extra == 'test'", specifier = "==6.2.0" },
