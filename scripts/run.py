@@ -1,3 +1,4 @@
-from calculator_pkg_shrvb32846 import Calculator
+from calculator_pkg_shrvb32846 import FileCalculator
 
-print(Calculator().add(1, 2))
+print(FileCalculator().add_file())
+

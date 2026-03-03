@@ -9,14 +9,19 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "build",
-    "mypy",
-    "pre-commit",
-    "pytest",
-    "ruff",
-    "twine",
-    "ty",
+    "tqdm~=4.0",
 ]
 
 [project.scripts]
 calculator_pkg_shrvb32846 = "calculator_pkg_shrvb32846.__main__:main"
+
+[project.optional-dependencies]
+test = [ # Could also be called 'dev'
+    "build==1.4.0",
+    "mypy==1.19.1",
+    "pre-commit==4.5.1",
+    "pytest==9.0.2",
+    "ruff==0.15.4",
+    "twine==6.2.0",
+    "ty==0.0.20",
+]
