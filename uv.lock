@@ -17,31 +17,47 @@ wheels = [
 ]
 
 [[package]]
+name = "cachetools"
+version = "7.0.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/c7/342b33cc6877eebc6c9bb45cb9f78e170e575839699f6f3cc96050176431/cachetools-7.0.2.tar.gz", hash = "sha256:7e7f09a4ca8b791d8bb4864afc71e9c17e607a28e6839ca1a644253c97dbeae0", size = 36983, upload-time = "2026-03-02T19:45:16.926Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ef/04/4b6968e77c110f12da96fdbfcb39c6557c2e5e81bd7afcf8ed893d5bc588/cachetools-7.0.2-py3-none-any.whl", hash = "sha256:938dcad184827c5e94928c4fd5526e2b46692b7fb1ae94472da9131d0299343c", size = 13793, upload-time = "2026-03-02T19:45:15.495Z" },
+]
+
+[[package]]
 name = "calculator-pkg-shrvb32846"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "tox" },
+    { name = "tqdm" },
+]
+
+[package.optional-dependencies]
+test = [
     { name = "build" },
     { name = "mypy" },
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "ruff" },
-    { name = "tqdm" },
     { name = "twine" },
     { name = "ty" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "build" },
-    { name = "mypy" },
-    { name = "pre-commit" },
-    { name = "pytest" },
-    { name = "ruff" },
-    { name = "tqdm", specifier = ">=4.67.3" },
-    { name = "twine" },
-    { name = "ty" },
+    { name = "build", marker = "extra == 'test'", specifier = "==1.4.0" },
+    { name = "mypy", marker = "extra == 'test'", specifier = "==1.19.1" },
+    { name = "pre-commit", marker = "extra == 'test'", specifier = "==4.5.1" },
+    { name = "pytest", marker = "extra == 'test'", specifier = "==9.0.2" },
+    { name = "ruff", marker = "extra == 'test'", specifier = "==0.15.4" },
+    { name = "tox", specifier = ">=4.47.1" },
+    { name = "tqdm", specifier = "~=4.0" },
+    { name = "twine", marker = "extra == 'test'", specifier = "==6.2.0" },
+    { name = "ty", marker = "extra == 'test'", specifier = "==0.0.20" },
 ]
+provides-extras = ["test"]
 
 [[package]]
 name = "certifi"
@@ -525,6 +541,18 @@ wheels = [
 ]
 
 [[package]]
+name = "pyproject-api"
+version = "1.10.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/45/7b/c0e1333b61d41c69e59e5366e727b18c4992688caf0de1be10b3e5265f6b/pyproject_api-1.10.0.tar.gz", hash = "sha256:40c6f2d82eebdc4afee61c773ed208c04c19db4c4a60d97f8d7be3ebc0bbb330", size = 22785, upload-time = "2025-10-09T19:12:27.21Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/54/cc/cecf97be298bee2b2a37dd360618c819a2a7fd95251d8e480c1f0eb88f3b/pyproject_api-1.10.0-py3-none-any.whl", hash = "sha256:8757c41a79c0f4ab71b99abed52b97ecf66bd20b04fa59da43b5840bac105a09", size = 13218, upload-time = "2025-10-09T19:12:24.428Z" },
+]
+
+[[package]]
 name = "pyproject-hooks"
 version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -706,6 +734,25 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/1c/03/e834bcd866f2f8a49a85eaff47340affa3bfa391ee9912a952a1faa68c7b/secretstorage-3.5.0.tar.gz", hash = "sha256:f04b8e4689cbce351744d5537bf6b1329c6fc68f91fa666f60a380edddcd11be", size = 19884, upload-time = "2025-11-23T19:02:53.191Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/46/f5af3402b579fd5e11573ce652019a67074317e18c1935cc0b4ba9b35552/secretstorage-3.5.0-py3-none-any.whl", hash = "sha256:0ce65888c0725fcb2c5bc0fdb8e5438eece02c523557ea40ce0703c266248137", size = 15554, upload-time = "2025-11-23T19:02:51.545Z" },
+]
+
+[[package]]
+name = "tox"
+version = "4.47.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cachetools" },
+    { name = "colorama" },
+    { name = "filelock" },
+    { name = "packaging" },
+    { name = "platformdirs" },
+    { name = "pluggy" },
+    { name = "pyproject-api" },
+    { name = "virtualenv" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a7/0e/a6561fd78b4a8501fafbd0488adb700ce36ff9b1ede8168c3300d2802669/tox-4.47.1.tar.gz", hash = "sha256:80b3d9157cff65b6b514b01840d33cf72de0fc9117cf18ef86531407d11d24d8", size = 254103, upload-time = "2026-03-03T15:50:43.477Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ce/c8/a422d692d91d75feb7796b42042b9320d9434ec3ac468a7f8388058d0906/tox-4.47.1-py3-none-any.whl", hash = "sha256:b2de8fc90157f357754082784c2457c542d797d93b3e8889682d7406db98afc4", size = 202060, upload-time = "2026-03-03T15:50:42.068Z" },
 ]
 
 [[package]]
