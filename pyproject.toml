@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "calculator_pkg_shrvb32846"
-version = "0.3.2"
+version = "0.3.3"
 requires-python = ">=3.13"
-description = "Calculator demno package"
+description = "Calculator demo package"
 readme = "README.md"
 authors = [
     {name = "Robert Merchant", email = "rjm288@gmail.com"}
@@ -62,7 +62,7 @@ include-package-data = true
 
 # https://stackoverflow.com/a/76214408/8903959
 [tool.setuptools.package-data]
-calculator_pkg_shrvb32846 = ["py.typed"]
+calculator_pkg_shrvb32846 = ["py.typed", "nums.csv"]
 
 # https://stackoverflow.com/a/76214408/8903959
 [tool.setuptools.packages.find]
