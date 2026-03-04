@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "calculator_pkg_shrvb32846"
-version = "0.3.3"
+version = "0.3.4"
 requires-python = ">=3.13"
 description = "Calculator demo package"
 readme = "README.md"
